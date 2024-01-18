@@ -68,7 +68,8 @@ nav{
     box-shadow: 20px 20px 150px #ffba47;
 }
 #nom{
-    font-family: "BungrrSpice-Regular";
+    font-family: "BungrrSpice-Regular" "Helvetica Neue";
+    color: #ffba47;
     position:absolute;
     top: 150px;
     left: 40px;

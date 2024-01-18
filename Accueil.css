@@ -1,0 +1,415 @@
+body{
+    background-color: rgb(42, 43, 51);
+    margin: 20px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@font-face{
+    font-family: "BungrrSpice-Regular";
+    src: url(BungeeSpice-Regular.ttf);
+}
+#logo{
+    border-radius: 50%;
+    width: 7%;
+}
+nav{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: -50px;
+
+}
+.a1{
+    text-decoration: none;
+    color:#96cd39;
+    font-size: 1.5em;
+    margin-left:50px;
+}
+.a1:hover{
+    text-shadow: 5px 5px 60px rgb(0, 255, 98);
+}
+.a1::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color:#f5ff65;
+    transform: scale(0);
+    transition: 0.5s  ease-in-out
+}
+.a1:hover::after{
+    transform: scale(1);
+}
+.container .wrapper{
+    width:40%;
+    height: 100vh;
+    box-shadow: 20px 20px 20px cyan;
+    overflow: hidden;
+
+
+}
+.container .wrapper-holder{
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+.imge1{
+    display: flex;
+    justify-content: end;
+}
+.imge{
+    width: 30%;
+    height: 450px;
+    border: 5px #ffba47 solid;
+    border-radius: 20px;
+    
+}
+.imge:hover{
+    box-shadow: 20px 20px 150px #ffba47;
+}
+#nom{
+    font-family: "BungrrSpice-Regular" ;
+    position:absolute;
+    top: 150px;
+    left: 40px;
+    font-size: 2.5em;
+    color: cyan;
+    border-right: 5px white solid;
+    width: 600px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 3s steps(18) infinite;
+}
+@keyframes animate {
+    from{
+        width: 1%;
+    }
+    to{
+        width: 600px;
+    }
+    
+}
+.parag1{
+    position: relative;
+    top: -380px;
+    font-size: 1.8em;
+    width: 60%;
+    color:  #faffb2;
+}
+.parag1::first-letter{
+    font-size: 2em;
+    color: #96cd39;
+}
+.btn1{
+    position: relative;
+    top: -390px;
+    padding: 5px 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #96cd39;
+    color: #ffba47;
+    box-shadow: 0 0 40px #96cd39;
+}
+.btn1:hover{
+    background-color: #96cd39;
+    color: white;
+    box-shadow: 0 0 100px #96cd39 0 0 150px #96cd39 0 0 150px #96cd39;
+
+}
+.parag2{
+    position: relative;
+    top: -380px;
+    font-size: 1.8em;
+    color: #ffba47;
+}
+#finger{
+    padding-bottom: 30px;
+    transform: translateY(-20px);
+    animation: transl 0.5s alternate 1s infinite;
+}
+@keyframes transl {
+    0%{
+        transform: translateY(-20px);
+    }
+    40%{
+        transform: translateY(-20px);
+    }
+    60%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+    
+}
+.bares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -400px;
+}
+.lng{
+    font-family:"BungrrSpice-Regular" ;
+}
+.bar{
+    width: 50%;
+    height: 24px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+.chargement-css{
+    width: 75%;
+    height: 20px;
+    background-color:cyan;
+    box-shadow: 0 0 20px cyan;
+    animation: barrecss 2s ease-in-out 1s infinite;
+
+}
+.chargement-python{
+    width: 90%;
+    height: 20px;
+    background-color:cyan;
+    box-shadow: 0 0 20px cyan;
+    animation: barrepython 2s ease-in-out 1s infinite;
+
+}
+.chargement-c{
+    width: 50%;
+    height: 20px;
+    background-color:cyan;
+    box-shadow: 0 0 20px cyan;
+    animation: barrec 2s ease-in-out 1s infinite;
+
+}
+.chargement-html{
+    width: 85%;
+    height: 20px;
+    background-color:cyan;
+    box-shadow: 0 0 20px cyan;
+    animation: barrehtml 2s ease-in-out 1s infinite;
+}
+@keyframes barrehtml {
+    0%{
+        width: 0%;
+    }
+    10%{
+        width: 20px;
+    }
+    15%{
+        width: 15%;
+    }
+    30%{
+        width: 30%;
+    }
+    40%{
+        width: 40%;
+    }
+    50%{
+        width: 50%;
+    }
+    60%{
+        width: 60%;
+    }
+    100%{
+        width: 85%;
+    }
+    
+}
+@keyframes barrecss {
+    0%{
+        width: 0%;
+    }
+    10%{
+        width: 20px;
+    }
+    15%{
+        width: 15%;
+    }
+    30%{
+        width: 30%;
+    }
+    40%{
+        width: 40%;
+    }
+    50%{
+        width: 50%;
+    }
+    60%{
+        width: 60%;
+    }
+    100%{
+        width: 75%;
+    }
+    
+}
+@keyframes barrepython {
+    0%{
+        width: 0%;
+    }
+    10%{
+        width: 20%;
+    }
+    15%{
+        width: 15%;
+    }
+    30%{
+        width: 30%;
+    }
+    40%{
+        width: 40%;
+    }
+    50%{
+        width: 50%;
+    }
+    60%{
+        width: 60%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+@keyframes barrec {
+    0%{
+        width: 0%;
+    }
+    10%{
+        width: 20%;
+    }
+    15%{
+        width: 15%;
+    }
+    30%{
+        width: 30%;
+    }
+    40%{
+        width: 40%;
+    }
+    100%{
+        width: 50%;
+    }
+    
+}
+.titre{
+    font-family: "BungrrSpice-Regular";
+    font-size: 2em;
+    position: relative;
+    top: -350px;
+}
+.projets{
+    position: relative;
+    top: -350px;
+    border:cyan 4px solid;
+    border-radius: 10px;
+    
+
+}
+.projets:hover{
+    box-shadow: 10px 10px 100px cyan;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #BBDEFB;
+}
+
+i {
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width:700px) {
+    #logo{
+        width: 15%;
+    }
+    nav{
+        flex-direction: column;
+        position: relative;
+        top: 20px;
+        
+    }
+    .a1{
+        align-self: center;
+        margin-top: 20px;
+    }
+    #nom{
+        margin-top: 230px;
+        font-size: 1.5em;
+        text-align: center;
+        width: 350px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: animate 3s steps(18) infinite;
+
+    }
+    @keyframes animate {
+        from{
+            width: 1%;
+        }
+        to{
+            width: 350px;
+        }
+        
+    }
+    .imge1{
+        margin-top: 130px;
+        margin-left: 10px;
+        justify-content: center;
+    }
+    .imge{
+        width: 80%;
+        height: 350px;
+    }
+    .parag1{
+        font-size: 1em;
+        text-align: center;
+        margin-top: 400px;
+        width: 100%;
+    }
+    .btn1{
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+    .parag2{
+        font-size: 1em;
+        text-align: center;
+    }
+    .bar{
+        width: 50%;
+        height: 24px;
+        border: 2px solid white;
+        border-radius: 5px;
+        background-color: transparent;
+    
+    }
+}

@@ -365,12 +365,15 @@ i {
     }
     #nom{
         margin-top: 230px;
-        font-size: 1.5em;
+        font-size: 1.7em;
         text-align: center;
         width: 350px;
         overflow: hidden;
         white-space: nowrap;
         animation: animate 3s steps(18) infinite;
+        font-family: "Helvetica Neue";
+        color: #ffba47;
+}
 
     }
     @keyframes animate {
